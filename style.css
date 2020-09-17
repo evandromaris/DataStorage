@@ -1,0 +1,254 @@
+body{
+    background-color: hsl(229, 57%, 11%);
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color:hsl(229, 57%, 11%);
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: 100% 50%;
+}
+
+.div1{
+    width: 350px;
+    height: 190px;
+    background-color: hsl(228, 56%, 26%);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px 100px 10px 10px;   
+}
+
+.div2{
+    width: 500px;
+    height: 120px;
+    background-color: hsl(228, 56%, 26%);
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    top: 35px;
+    border-radius: 10px;
+}
+
+.div1 img{
+    position: relative;
+    top: 15%;
+    margin: 0px 0px 0px 20px;
+    padding: 10px;
+}
+
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;  
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: 50px 0px 0px 30px;
+}
+
+
+.image1 {
+    background-color: hsl(229, 57%, 11%);
+    background-image: url("images/icon-document.svg");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    width: 45px;  
+    height: 45px;
+    border-radius: 10px;
+    margin: 0px 15px 0px 0px;
+    
+}
+
+.image2 {
+    background-color: hsl(229, 57%, 11%);
+    background-image: url("images/icon-folder.svg");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    width: 45px;  
+    height: 45px;
+    margin: 0px 15px 0px 0px;
+    border-radius: 10px;
+    
+}
+
+.image3 {
+    background-color: hsl(229, 57%, 11%);
+    background-image: url("images/icon-upload.svg");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    width:45px;  
+    height: 45px;
+    border-radius: 10px;
+    margin: 0px 15px 0px 0px;
+}
+
+.text p{
+    color: white;
+    position: relative;
+    left: 6%;   
+
+}
+
+
+.bar{
+    background-color:hsl(229, 57%, 11%);
+    position: absolute;
+    width: 450px;
+    height: 20px;
+    left: 7%;
+    border-radius: 10px;
+}
+
+.bar2{
+    background: -o-webkit-gradient(linear,left top, right top, from(hsl(6, 100%, 80%)), to(hsl(335, 100%, 65%))) no-repeat;
+    background: -webkit-gradient(linear,left top, right top, from(hsl(6, 100%, 80%)), to(hsl(335, 100%, 65%))) no-repeat;
+    background: -ms-linear-gradient(left, hsl(6, 100%, 80%), hsl(335, 100%, 65%)) no-repeat;
+    width: 350px;
+    height: 16px;
+    position: absolute;
+    margin: 2.5px 0 0 1.5px;
+    border-radius: 10px;
+}
+
+.circle{
+    background-color: white;
+    width: 13px;
+    height: 13px;
+    position: relative;
+    float: right;
+    margin: 1px 1px 1px 1px;
+    border-radius: 10px;
+}
+
+.text2{
+    float: left;
+    position: relative;
+    top: 30px;
+    color: white;
+    left: 5%;
+    
+}
+.text3{
+    float: right;
+    position: relative;
+    top: 30px;
+    color: white;
+    right: 5%;
+    
+}
+
+.storage{
+    width:200px;
+    height: 80px;
+    background-color: white;
+    top: -120%;
+    left: 50%;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    position: relative;
+    border-radius: 10px;
+}
+    
+
+.box{
+    width: 0; 
+    height: 0; 
+    position: relative;
+    border-top: 0px solid transparent;
+    border-bottom: 55px solid transparent;
+    border-right: 55px solid #fff;
+    top: 20%;
+    left: 77.5%;
+}
+
+.number {
+    font-size: 50px;
+    
+    position: relative;
+    float: left;
+    left: 10px;
+    bottom: 45px;
+}
+
+.text4{
+    position: relative;
+    top: 15px;
+    font-size: 17px;
+    color:hsl(229, 7%, 55%);
+}
+
+@media only screen and (max-width:950px) {
+    .container{
+        background-image: url("images/bg-mobile.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        flex-direction: column;
+        
+    }
+    .div1{
+        max-width: 300px;
+        height: 190px;
+        float: left;
+        margin-top: 0;
+        
+    }
+    .div2{
+        max-width: 300px;
+        height: 130px;
+        position: relative;
+        top: 0px;
+    }
+    
+    .text{
+        position: relative;
+        left: 5%;
+    }
+    .bar{
+        max-width: 250px;
+        height: 20px;
+        position: relative;
+        border-radius: 10px;
+
+    }
+    .bar2{
+        width: 150px;
+        height: 16px;       
+        
+    }
+
+    .text2{
+        position: relative;
+        top: 10%;
+        left: 10%;
+    }
+
+    .text3{
+        position: relative;
+        top: 10%;
+        right: 10%;
+    }
+
+    .storage{        
+        position: relative;
+        left: 10%;
+        top: 40%;
+        
+        
+    }
+    .box{        
+        display:none;
+    }
+}
